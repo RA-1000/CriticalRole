@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ConjurosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CONJURO">
+    <Key>
+      <PropertyRef Name="ID_CONJURO" />
+    </Key>
+    <Property Name="ID_CONJURO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="ESCUELA" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="NIVEL" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="COMPONENTES" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="TIEMPO_LANZAMIENTO" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="ALCANCE" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="AREA_EFECTO" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="DURACION" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="TIRADA_SALVACION" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="RESISTENCIA" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ConjurosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CONJURO" EntityType="Self.CONJURO" />
+  </EntityContainer>
+</Schema>

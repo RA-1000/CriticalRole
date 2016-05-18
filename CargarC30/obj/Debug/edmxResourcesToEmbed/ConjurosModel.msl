@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ConjurosModelStoreContainer" CdmEntityContainer="ConjurosEntities">
+    <EntitySetMapping Name="CONJURO">
+      <EntityTypeMapping TypeName="ConjurosModel.CONJURO">
+        <MappingFragment StoreEntitySet="CONJURO">
+          <ScalarProperty Name="ID_CONJURO" ColumnName="ID_CONJURO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="ESCUELA" ColumnName="ESCUELA" />
+          <ScalarProperty Name="NIVEL" ColumnName="NIVEL" />
+          <ScalarProperty Name="COMPONENTES" ColumnName="COMPONENTES" />
+          <ScalarProperty Name="TIEMPO_LANZAMIENTO" ColumnName="TIEMPO_LANZAMIENTO" />
+          <ScalarProperty Name="ALCANCE" ColumnName="ALCANCE" />
+          <ScalarProperty Name="AREA_EFECTO" ColumnName="AREA_EFECTO" />
+          <ScalarProperty Name="DURACION" ColumnName="DURACION" />
+          <ScalarProperty Name="TIRADA_SALVACION" ColumnName="TIRADA_SALVACION" />
+          <ScalarProperty Name="RESISTENCIA" ColumnName="RESISTENCIA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ConjurosModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="data source=C:\PRUEBAS\CargarC30\CargarC30\Conjuros30.db" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CONJURO">
+    <Key>
+      <PropertyRef Name="ID_CONJURO" />
+    </Key>
+    <Property Name="ID_CONJURO" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBRE" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="ESCUELA" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="NIVEL" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="COMPONENTES" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="TIEMPO_LANZAMIENTO" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="ALCANCE" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="AREA_EFECTO" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="DURACION" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="TIRADA_SALVACION" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="RESISTENCIA" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="DESCRIPCION" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityContainer Name="ConjurosModelStoreContainer">
+    <EntitySet Name="CONJURO" EntityType="Self.CONJURO" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
