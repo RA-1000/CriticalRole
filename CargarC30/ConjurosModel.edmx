@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ConjurosModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="data source=C:\PRUEBAS\CargarC30\CargarC30\Conjuros30.db" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CONJURO">
+          <Key>
+            <PropertyRef Name="ID_CONJURO" />
+          </Key>
+          <Property Name="ID_CONJURO" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="ESCUELA" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="NIVEL" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="COMPONENTES" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="TIEMPO_LANZAMIENTO" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="ALCANCE" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="AREA_EFECTO" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="DURACION" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="TIRADA_SALVACION" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="RESISTENCIA" Type="nvarchar" MaxLength="2147483647" />
+          <Property Name="DESCRIPCION" Type="nvarchar" MaxLength="2147483647" />
+        </EntityType>
+        <EntityContainer Name="ConjurosModelStoreContainer">
+          <EntitySet Name="CONJURO" EntityType="Self.CONJURO" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ConjurosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CONJURO">
+          <Key>
+            <PropertyRef Name="ID_CONJURO" />
+          </Key>
+          <Property Name="ID_CONJURO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="ESCUELA" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="NIVEL" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="COMPONENTES" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="TIEMPO_LANZAMIENTO" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="ALCANCE" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="AREA_EFECTO" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="DURACION" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="TIRADA_SALVACION" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="RESISTENCIA" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="ConjurosEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CONJURO" EntityType="Self.CONJURO" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ConjurosModelStoreContainer" CdmEntityContainer="ConjurosEntities">
+          <EntitySetMapping Name="CONJURO">
+            <EntityTypeMapping TypeName="ConjurosModel.CONJURO">
+              <MappingFragment StoreEntitySet="CONJURO">
+                <ScalarProperty Name="ID_CONJURO" ColumnName="ID_CONJURO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="ESCUELA" ColumnName="ESCUELA" />
+                <ScalarProperty Name="NIVEL" ColumnName="NIVEL" />
+                <ScalarProperty Name="COMPONENTES" ColumnName="COMPONENTES" />
+                <ScalarProperty Name="TIEMPO_LANZAMIENTO" ColumnName="TIEMPO_LANZAMIENTO" />
+                <ScalarProperty Name="ALCANCE" ColumnName="ALCANCE" />
+                <ScalarProperty Name="AREA_EFECTO" ColumnName="AREA_EFECTO" />
+                <ScalarProperty Name="DURACION" ColumnName="DURACION" />
+                <ScalarProperty Name="TIRADA_SALVACION" ColumnName="TIRADA_SALVACION" />
+                <ScalarProperty Name="RESISTENCIA" ColumnName="RESISTENCIA" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
